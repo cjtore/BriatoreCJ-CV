@@ -1,0 +1,485 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* ========= Set base 10 font size ========= */
+html {
+  font-size: 70%;
+  scroll-behavior: smooth;
+  /*background-color: #5414a1;*/
+}
+h1 {
+  color: #5414a1;
+  margin-left: 20px;
+  font-weight: bold;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;  
+}
+h1 span {
+  color: #8658be;
+  font-weight: lighter;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body {
+  color: rgb(58, 55, 55);
+  font-size: 14px;
+  font-size: 1.4rem;
+  line-height: 1.5;
+}
+
+section[id] {
+  scroll-margin-top: 120px;
+}
+background {
+  color: #ff0;
+}
+/* ========== General Styles ========== */
+
+/* Links and Anchors */
+a,
+a:link,
+a:visited {
+  color: #3e7fa6;
+  text-decoration: none;
+}
+
+header {
+  z-index: 100;
+  padding: 10px;
+  position: sticky;
+  top: 0;
+  background-color: rgb(226, 230, 230);
+  
+}
+
+a:hover {
+  color: orange;
+  background-color: black;
+}
+a:focus {
+  color: #415c6c;
+}
+
+/* List */
+ul {
+  padding: 0;
+  margin-left: 20px;
+}
+
+/* ======= Particles ========== */
+#particles-js {
+  width: 100%;
+  height: 100%;
+  margin:0;
+  position: fixed;
+  z-index: -1;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+
+/* ========== Layout ========== */
+
+/* Apply a natural box layout model to all elements */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+/* Columns */
+.main,
+.sidebar,
+.portfolio-item {
+  float: left;
+}
+
+.main {
+  width: 100%;
+}
+
+.sidebar,
+.portfolio-item {
+  width: 30%;
+}
+
+/* ========== Navigation ========== */
+
+.top-nav {
+  border-top: 2px solid #415c6c;
+  border-bottom: 1px solid #d4d4d4;
+  margin-bottom: 21px;
+  margin-bottom: 2.1rem;
+}
+
+.top-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.top-nav li {
+  float: left;
+}
+
+.top-nav a {
+  display: block;
+  padding: 10px 15px;
+  text-transform: uppercase;
+}
+
+/* ========== Modules ========== */
+
+/* Portrait */
+.portrait {
+  float: left;
+  margin-right: 30px;
+  width: 230px;
+}
+.imgframe {
+  border: 1px solid rgb(41, 149, 149);
+  padding: 4px;
+  margin: 5px;
+}
+.portrait.caption {
+  color: #777;
+  font-size: 12px;
+  font-size: 1.2rem;
+}
+
+/* About */
+
+.about_section {
+  display: flex;
+}
+
+.about-main h2 {
+  font-size: 30px;
+  margin-bottom: -5px;
+}
+
+.about-main h2 span {
+  color: #e74d06;
+}
+.about-left {
+  width: 65%;
+  background-color: #cee7f5;
+  padding: 25px;
+}
+.about-right {
+  width: 35%;
+  background-color: #69b1db;
+  padding: 25px;
+}
+/* Contact Form */
+.contact {
+  z-index: 0;
+}
+input[type="text"],
+input[type="email"],
+textarea {
+  color: #555;
+  display: block;
+  margin-bottom: 21px;
+  margin-bottom: 2.1rem;
+  width: 100%;
+}
+
+textarea {
+  height: 150px;
+}
+
+label {
+  font-weight: bold;
+}
+
+.form-button {
+  background-color: #e4e4e4;
+  border: 1px solid #c4c4c4;
+  border-radius: 3px;
+  color: #555;
+  padding: 8px 15px;
+}
+
+.form-button:hover,
+.form-button:focus {
+  background-color: #d4d4d4;
+}
+
+.contact-form {
+  margin-bottom: 21px;
+  margin-bottom: 2.1rem;
+}
+
+/* Sidebar */
+.sidebar {
+  background-color: #f6f6f6;
+  padding: 0 20px;
+}
+
+/* Flexible Media */
+.flex {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Footer */
+.page-footer {
+  border-top: 1px solid #415c6c;
+}
+
+.cf:before,
+.cf:after {
+  content: " "; /* 1 */
+  display: table; /* 2 */
+}
+
+.cf:after {
+  clear: both;
+}
+
+
+.cf {
+  *zoom: 1;
+}
+
+.skills_section {
+  width: 100%;
+  height: 110vh;
+  padding: 0px 5%;
+  background-color: rgba(204, 209, 211, 0.828);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.skills_head {
+  width: 100%;
+  margin-bottom: 50px;
+  display: grid;
+  place-items: center;
+}
+.skills_head h2 {
+  font-size: 30px;
+  margin-bottom: -5px;
+  text-align: left;
+}
+.skills_head h2 span {
+  color: #e74d06;
+}
+.skills_main {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-row-gap: 30px;
+  grid-column-gap: 50px;
+}
+.skills_main .skill_bar .info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #361859;
+  font-weight: 700;
+}
+.skill_bar .info p:nth-child(2) {
+  font-weight: 500;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #5414a1;
+}
+.skill_bar .bar {
+  width: 100%;
+  height: 10px;
+  background-color: rgba(0, 0, 0, 0.144);
+  border-radius: 25px;
+  margin-top: 5px;
+  position: relative;
+}
+.skill_bar .bar span {
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  background-color: #e74d06;
+  border-radius: 25px;
+}
+
+.skill_bar .bar .html {
+  width: 95%;
+  animation: html 2s;
+}
+@keyframes html {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 95%;
+  }
+}
+.skill_bar .bar .css {
+  width: 85%;
+  animation: css 2s;
+}
+@keyframes css {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 85%;
+  }
+}
+
+.skill_bar .bar .csharp {
+  width: 80%;
+  animation: csharp 2s;
+}
+@keyframes csharp {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 80%;
+  }
+}
+.skill_bar .bar .python {
+  width: 80%;
+  animation: python 2s;
+}
+@keyframes python {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 80%;
+  }
+}
+
+.skill_bar .bar .sass {
+  width: 80%;
+  animation: sass 2s;
+}
+@keyframes sass {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 80%;
+  }
+}
+.skill_bar .bar .js {
+  width: 80%;
+  animation: css 2s;
+}
+@keyframes js {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 80%;
+  }
+}
+.skill_bar .bar .react {
+  width: 75%;
+  animation: react 2s;
+}
+@keyframes react {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 75%;
+  }
+}
+.skill_bar .bar .node {
+  width: 70%;
+  animation: node 2s;
+}
+@keyframes node {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 70%;
+  }
+}
+.skill_bar .bar .express {
+  width: 65%;
+  animation: express 2s;
+}
+@keyframes express {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 65%;
+  }
+}
+.skill_bar .bar .mongo {
+  width: 60%;
+  animation: mongo 2s;
+}
+@keyframes mongo {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 60%;
+  }
+}
+
+.cvitae {
+  background-color: #c9ecd07e;
+  align-items: center;
+  padding: 2rem;
+}
+.cvitae h2 {
+  font-size: 30px;
+
+  text-align: left;
+}
+.cvitae h2 span {
+  color: #e74d06;
+}
+
+.contact {
+  background-color: rgba(214, 208, 208, 0.634);
+  padding: 2rem;
+}
+.contact h2 {
+  font-size: 30px;
+  text-align: left;
+}
+.contact h2 span {
+  color: #e74d06;
+}
+
+#container-form {
+  border: solid 3px #474544;
+  max-width: 768px;
+  margin: 60px auto;
+  position: relative;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #5414a1;
+}
+form {
+  padding: 37.5px;
+  margin: 50px 0;
+}
+
+.submit-button {
+  width: 100px;
+  background-color: white;
+  transition-duration: 0.4s;
+  padding: 1em;
+  border-radius: 12px;
+  
+}
+
+.submit-button:hover {
+  background-color: red;
+  color: white;
+  width: 110px;
+}
